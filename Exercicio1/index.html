@@ -1,0 +1,51 @@
+<html> 
+   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+     <title>Exercicio 1</title> 
+     <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+   </head> 
+   <body> 
+       <x3d width='850px' height="850px">
+           <scene>
+                        <!-- cone -->
+             <transform translation="-3 0 0">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="1 0 0"/>
+                    </appearance>
+                    <cone bottomRadius="2" height="3"/>
+                </shape> 
+            </transform>
+                    <!-- cubo -->
+            <transform translation="1 0 0">
+              <shape>
+                  <appearance>
+                      <material diffuseColor="0 0 1"/>
+                  </appearance>
+                  <box size="3 3 3"/>
+              </shape>
+            </transform>
+                    <!-- esfera -->
+            <transform translation="4 0 0">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="0 1 0"/>
+                    </appearance>
+                    <sphere radius="1"/>
+                </shape>
+            </transform>
+
+                    <!-- cilindro -->
+            <transform translation="6 0 0">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="1 1 0"/>
+                    </appearance>
+                    <cylinder radius='1.5' height='4'/>
+                </shape>
+            </transform>
+           </scene>
+       </x3d>
+   </body>
+</html>
