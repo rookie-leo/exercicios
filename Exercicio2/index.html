@@ -1,0 +1,84 @@
+<html> 
+   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+     <title>Meu primeiro X3DOM</title> 
+     <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+   </head> 
+   <body> 
+     
+     
+	 <x3d width='850px' height='850px'> 
+	   <scene> 
+
+       <!--base da mesa-->
+		  	<shape> 
+    	    	<appearance> 
+	    		    <material diffuseColor='0.54 0.27 0.07'/>
+		    	  </appearance> 
+          
+		      <box size='106 2 49'/> 
+    		</shape> 
+
+       <!--lado esquerdo-->
+       <transform translation='-53 -38.5 0'>
+		  	<shape> 
+    	    	<appearance> 
+	    		    <material diffuseColor='0.54 0.27 0.07'/>
+		    	</appearance> 
+		      <box size='2 79 49'/> 
+    		</shape> 
+       </transform>
+
+       <!--lado direito-->
+       <transform translation='53 -38.5 0'>
+		  	<shape> 
+    	    	<appearance> 
+	    		    <material diffuseColor='0.54 0.27 0.07'/>
+		    	</appearance> 
+		      <box size='2 79 49'/> 
+    		</shape> 
+       </transform>
+
+
+       <!--um pezinho-->
+       <transform translation='53 -78 20'>
+		  	<shape> 
+    	    	<appearance> 
+	    		    <material diffuseColor='0 0 0'/>
+		    	</appearance> 
+		      <cone buttomradio='0.5' height='2'/> 
+    		</shape> 
+       </transform>
+       <!-- monitor -->
+       <transform translation="0 20 -10">
+            <shape>
+                <appareance>
+                    <material diffuseColor="0 0 0"/>
+                </appareance>
+                <box size="40 20 3"/>
+            </shape>
+       </transform>
+       <!--pé do monitor-->
+       <transform translation="0 7 -10" translate="1 0 1">
+            <shape>
+                <appearance>
+                    <material diffuseColor="0 0 0"/>
+                </appearance>
+                <cylinder radius="2" height="8"/>
+            </shape>
+       </transform>
+
+        <!--pé do monitor2-->
+        <transform translation="0 2 -10" translate="1 0 1">
+        <shape>
+            <appearance>
+                <material diffuseColor="0 0 0"/>
+            </appearance>
+            <cylinder radius="6" height="2"/>
+        </shape>
+    </transform>
+     </scene>
+   </x3d>
+  </body>
+</html>
